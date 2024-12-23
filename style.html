@@ -1,3 +1,135 @@
+<html lang="en"> <!DOCTYPE html>
+<div class="clock-container" id="clock"></div>
+<style>
+  .clock-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #00ff00;
+    font-family: 'M PLUS 1 Code', sans-serif;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+    z-index: 1000;
+    text-align: center;
+  }
+</style>
+
+<script>
+  function updateClock() {
+    const clockElement = document.getElementById('clock');
+    const now = new Date();
+    const hours = now.getHours().toString().padStart(2, '0');
+    const minutes = now.getMinutes().toString().padStart(2, '0');
+    const seconds = now.getSeconds().toString().padStart(2, '0');
+    clockElement.textContent = `${hours}:${minutes}:${seconds}`;
+  }
+
+  // Atualiza o relógio a cada segundo
+  setInterval(updateClock, 10);
+  updateClock(); // Chamada inicial para exibir o relógio imediatamente
+</script>
+
+  
+  
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>𝗛𝗔𝗖𝗞𝗘𝗥 𝗕𝗨𝗔𝗦𝗧𝗥𝗢𝟳 💎𝟮.𝟬</title>
+
+</head>
+
+<body>
+
+  <!-- Estilo do botão -->
+
+  <style type="text/css">
+
+    .whatsapp-plug-icon {
+
+      position: fixed;
+
+      z-index: 1000;
+
+      bottom: 20px;
+
+      right: 20px;
+
+      width: 70px;
+
+      height: 70px;
+
+      -webkit-border-radius: 50%;
+
+      cursor: pointer;
+
+      background-color: #00ff42;
+
+      transition: .3s;
+
+      background-position: center;
+
+      background-repeat: no-repeat;
+
+      background-image: url(https://adsconcept.com.br/wp-content/uploads/2020/10/Whatsapp_AdsConcept.png);
+
+      background-size: 50% auto;
+
+    }
+    
+    .whatsapp-plug-icon:hover {
+      background-color: #00ff42;
+    }
+
+    .whatsapp-plug-icon::after, .whatsapp-plug-icon::before {
+      content: '';
+      position: absolute;
+      opacity: 0;
+      border: 4px solid #0ba360;
+      left: -10px;
+      top: -10px;
+      right: -10px;
+      bottom: -10px;
+      -webkit-border-radius: 50%;
+      animation: WaveWhatsApp 1.5s ease infinite;
+    }
+
+    .whatsapp-plug-icon::after {
+      animation-delay: .5s;
+    }
+    .whatsapp-plug-icon:hover::after {
+      border: 4px solid #15cc74;
+    }
+    .whatsapp-plug-icon:hover::before {
+      border: 4px solid #27ff28 ;
+    }
+    @keyframes WaveWhatsApp {
+      0%{
+        transform: scale(0.5);
+      }
+      50%{
+        opacity: 1;
+      }
+      100%{
+        transform: scale(1.2);
+        opacity: 0;
+      }
+    }
+  </style>
+ <a target="_blank" class="whatsapp-plug-icon" href="https://api.whatsapp.com/send?phone=5562998136026&text=Como%20fa%C3%A7o%20pra%20compra%20o%20Rob%C3%B4"></a>
+
+
+</body>
+</html>
 <html lang="en">
 
 <head>
@@ -60,7 +192,7 @@
 
 
         .markdown-body img {
-            max-width: 88%;
+            max-width: 100%;
             box-sizing: content-box;
             background-color: #ffffff00;
         }
@@ -90,7 +222,7 @@
 
 .custom-container {
     text-align: center;
-    max-width: 525px;
+    max-width: 380px;
     width: 95%;
     padding: 0px;
     background-color: rgba(0, 0, 0, 0);
@@ -362,15 +494,15 @@ iframe {
         
         #draggable-image {
     position: absolute;
-    top: 468px;
-    left: 21px;
+    top: 19PX;
+    left: 11px;
     z-index: 10002;
     cursor: move;
 }
 
 
 #draggable-image img {
-    width: 150px; 
+    width: 105px;
     height: auto;
 }
 .icon-small {
@@ -592,7 +724,7 @@ color: #00ff00;
 <body>
     <div class="video-background">
         <video autoplay loop muted playsinline>
-            <source src="https://cdn.coverr.co/videos/coverr-a-couple-running-on-the-beach-together-5932/1080p.mp4" type="video/mp4">
+            <source src="https://hackerdominesalife00.netlify.app/media/3585079191-preview.mp4_1728018529513-_uhUTxz9.mp4" type="video/mp4">
             Seu navegador não suporta o vídeo.
         </video>
     </div>
@@ -601,7 +733,12 @@ color: #00ff00;
            
             <!-- Register Form -->
             <div class="register-form mt-4">
+                <h6 class="mb-3 text-center">𝗛𝗔𝗖𝗞𝗘𝗥 𝗕𝗨𝗔𝗦𝗧𝗥𝗢𝟳 💎𝟮.𝟬 </h6>
+             
+              <div class="register-form mt-4">
+
                 <h6 class="mb-3 text-center"> SEJA BEM-VINDO</h6>
+              
                 <p class="text-center mb-4">Clique na plataforma que deseja</p>
                 <form id="loginForm">
                     <div id="loading-message" class="alert alert-warning" role="alert" style="display: none;">
@@ -609,17 +746,16 @@ color: #00ff00;
                     </div>
                     <div id="response"></div>
                     <div class="form-group"></div>
-                    <button class="btn btn-primary1 w-100" type="button" onclick="login('https://ricobet.net.br/yiej9zqce')" style="height: 155px;">
-                        <img src="https://ricobet.net.br/img/logo.798396dd.png" alt="Logo" class="icon-small">
+                    <button class="btn btn-primary1 w-100" type="button" onclick="login('https://jon.ceo/r/vMzYw')" style="height: 125px;">
+                        <img src="https://jon.bet/static/media/logo.3af9f796.svg" alt="Logo" class="icon-small">
                         
                     </button>
             
                 <div class="social-icons">
-                    <a href="https://www.instagram.com/as.stro7/?hl=pt-br" target="_blank"><i
+                    <a href="https://www.instagram.com/buastro7/?hl=pt-br" target="_blank"><i
                             class="bi bi-instagram"></i></a>
-                    <a href="https://t.me/astro14x" target="_blank"><i class="bi bi-telegram"></i></a>
-                    <a href="https://api.whatsapp.com/send?phone=5562998136026&text=Como%20fa%C3%A7o%20pra%20compra%20o%20Rob%C3%B4?" target="_blank"><i
-                            class="bi bi-whatsapp"></i></a>
+                    <a href="https://t.me/Buastro7" target="_blank"><i class="bi bi-telegram"></i></a>
+                   a
                 
     </div>
  
@@ -641,7 +777,7 @@ color: #00ff00;
                 <source src="https://hackerdominesalife00.netlify.app/media/3585079191-preview.mp4_1728018529513-_uhUTxz9.mp4" type="video/mp4">
                 Seu navegador não suporta a reprodução de vídeos.
             </video>
-            <span class="bot-title"><i class="fas fa-user-secret"></i>Hacker @𝙰𝚂.𝚂𝚃𝚁𝙾𝟽</span>
+            <span class="bot-title"><i class="fas fa-user-secret"></i> Hacker Marquez </span>
             
             <div id="result"></div>
             <span class="context-option" onclick="stopScroll();"><i class="fa fa-bomb" aria-hidden="true"></i> HACKEAR MINES</span>
